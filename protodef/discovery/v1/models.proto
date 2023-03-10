@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package discovery.v1;
+
+option go_package = "github.com/BeReal-Candidates/backend-go-test/protob/discovery/v1;pbdiscovery";
+
+message AddPostRequest {
+  AddPost post = 1;
+}
+
+message AddPostResponse {
+  bool success = 1;
+  Post post = 2;
+}
+
+message GetPostsRequest {
+  // start from this postId (excluded) to retrieve a new page
+  string cursor = 1;
+}
+
+message GetPostsResponse {
+  bool success = 1;
+  // last postId in the page, used to retrieve next page
+  // with GetPostsRequest
+  string cursor = 2;
+  repeated Post data = 3;
+}
+
+message Post {
+  string id = 1;
+  string owner = 2;
+  string front_pic_url = 3;
+  string back_pic_url = 4;
+}
+
+message AddPost {
+  string owner = 2;
+  string front_pic_url = 3;
+  string back_pic_url = 4;
+}
