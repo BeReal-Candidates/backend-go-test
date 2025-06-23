@@ -39,9 +39,10 @@ You can code, commit and push into this new repository.
 
 **WHEN YOU ARE READY** and want us to review your code, you have to add us as collaborators to your repository:
 
-- luzam
-- gautier-gdx
 - quangvoodoo
+- Dmouri
+- lkhouader
+- maxbrlvd
 
 From this stage, we considerer you have finished the task!
 
