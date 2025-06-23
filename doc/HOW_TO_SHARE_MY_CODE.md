@@ -37,12 +37,16 @@ You can code, commit and push into this new repository.
 
 ## 4 - Add collaborators to your new repository [**WHEN YOU ARE READY**]
 
-**WHEN YOU ARE READY** and want us to review your code, you have to add us as collaborators to your repository:
+**WHEN YOU ARE READY** and want us to review your code:
+
+You have to add these reviewers as collaborators to your repository:
 
 - quangvoodoo
 - Dmouri
 - lkhouader
 - maxbrlvd
+
+And please create a pull request for the changes that you made.
 
 From this stage, we considerer you have finished the task!
 
