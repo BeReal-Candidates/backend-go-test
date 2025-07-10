@@ -13,13 +13,13 @@ type Service interface {
 }
 
 type service struct {
-	posts []*Post
+	posts    []*Post
 	pageSize uint
 }
 
 func NewService(pageSize uint) Service {
 	return &service{
-		posts: make([]*Post, 0, 10),
+		posts:    make([]*Post, 0, 10),
 		pageSize: pageSize,
 	}
 }
