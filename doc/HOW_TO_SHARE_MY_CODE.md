@@ -47,7 +47,9 @@ You have to add these reviewers as collaborators to your repository:
 - maxbrlvd
 - optplx
 
-And please create a pull request for the changes that you made.
+Please create a pull request for the changes that you made. Make sure to write in the description of the PR what you want us to know about your chosen approach, any bugs you have found and fixed.
+
+Finally, don’t forget to upload your case (as a zip or GitHub link) using the second link included in the email you received about the case study.
 
 From this stage, we considerer you have finished the task!
 
@@ -55,7 +57,12 @@ From this stage, we considerer you have finished the task!
 <img src="./2.add_collaborators.png" width=600 />
 </p>
 
-## 5 - Chill & Wait
+## 5 - Code review
 
-Then it us to reach you after we review your code.
+The reviewers will review your code, and possibly leave some comments on your PR.
+So please keep an eye on it, and answer the all the questions that the reviewers might have.
+
+## 6 - Chill & Wait
+
+Then it's us to reach you after the review is done.
 Just chill!

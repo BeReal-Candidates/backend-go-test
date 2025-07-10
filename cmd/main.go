@@ -18,9 +18,7 @@ import (
 	"github.com/BeReal-Candidates/backend-go-test/discovery"
 )
 
-var (
-	DefaultPageSize = uint(3)
-)
+var DefaultPageSize = uint(3)
 
 func main() {
 	ctx, cf := context.WithCancel(context.Background())

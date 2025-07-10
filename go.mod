@@ -1,6 +1,6 @@
 module github.com/BeReal-Candidates/backend-go-test
 
-go 1.19
+go 1.24
 
 require google.golang.org/grpc v1.53.0
 
