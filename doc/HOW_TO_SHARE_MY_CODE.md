@@ -49,7 +49,7 @@ You have to add these reviewers as collaborators to your repository:
 
 Please create a pull request for the changes that you made. Make sure to write in the description of the PR what you want us to know about your chosen approach, any bugs you have found and fixed.
 
-Finally, don’t forget to upload your case (as a zip or GitHub link) using the second link included in the email you received about the case study.
+Finally, don’t forget to send us your GitHub PR using the second link included in the email you received about the case study.
 
 From this stage, we considerer you have finished the task!
 

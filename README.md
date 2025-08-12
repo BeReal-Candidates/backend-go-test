@@ -38,9 +38,9 @@ Using this cursor, the fourth call must yield no posts and no cursor.
 
 ### Your goal
 
-The feature is deliberately unfinished, it contains bugs and it's quite slow
-
-Your goal is to finish the `discovery.Service`, as of now the `GetPosts` function does not handle the pagination
+The feature is deliberately unfinished and it contains bugs. Your goal is to:
+- Finish the `discovery.Service`, as of now the `GetPosts` function does not handle the pagination.
+- Find and fix the bugs that we planted in the code.
 
 ### Challenges to keep in mind
 
