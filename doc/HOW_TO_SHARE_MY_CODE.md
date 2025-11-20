@@ -43,13 +43,12 @@ You have to add these reviewers as collaborators to your repository:
 
 - quangvoodoo
 - Dmouri
-- lkhouader
-- maxbrlvd
-- optplx
 
 Please create a pull request for the changes that you made. Make sure to write in the description of the PR what you want us to know about your chosen approach, any bugs you have found and fixed.
 
-Finally, don’t forget to send us your GitHub PR using the second link included in the email you received about the case study.
+Finally, don’t forget to:
+- Submit your GitHub PR using the second link included in the email you received about the case study.
+- And upload a zip file containing your final solution.
 
 From this stage, we considerer you have finished the task!
 
@@ -59,7 +58,7 @@ From this stage, we considerer you have finished the task!
 
 ## 5 - Code review
 
-The reviewers will review your code, and possibly leave some comments on your PR.
+The reviewers will review your code, and possibly leave some comments or ask some follow-up questions on your PR.
 So please keep an eye on it, and answer the all the questions that the reviewers might have.
 
 ## 6 - Chill & Wait
