@@ -9,6 +9,7 @@ import (
 type Service interface {
 	AddPost(context.Context, *AddPost) (*Post, error)
 	GetPosts(ctx context.Context, cursor string) (Page[*Post], error)
+	DeletePost(ctx context.Context, postId string) (bool, error)
 	Close()
 }
 
@@ -42,6 +43,11 @@ func (s *service) GetPosts(ctx context.Context, cursor string) (Page[*Post], err
 		Data:   s.posts,
 		Cursor: s.posts[len(s.posts)-1].ID,
 	}, nil
+}
+
+// TODO: implement it!
+func (s *service) DeletePost(ctx context.Context, postId string) (bool, error) {
+	return false, nil
 }
 
 func (s *service) Close() {}

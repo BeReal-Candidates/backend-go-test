@@ -24,6 +24,7 @@ const _ = grpc.SupportPackageIsVersion7
 type DiscoveryServiceClient interface {
 	AddPost(ctx context.Context, in *AddPostRequest, opts ...grpc.CallOption) (*AddPostResponse, error)
 	GetPosts(ctx context.Context, in *GetPostsRequest, opts ...grpc.CallOption) (*GetPostsResponse, error)
+	DeletePost(ctx context.Context, in *DeletePostRequest, opts ...grpc.CallOption) (*DeletePostResponse, error)
 }
 
 type discoveryServiceClient struct {
@@ -52,12 +53,22 @@ func (c *discoveryServiceClient) GetPosts(ctx context.Context, in *GetPostsReque
 	return out, nil
 }
 
+func (c *discoveryServiceClient) DeletePost(ctx context.Context, in *DeletePostRequest, opts ...grpc.CallOption) (*DeletePostResponse, error) {
+	out := new(DeletePostResponse)
+	err := c.cc.Invoke(ctx, "/discovery.v1.DiscoveryService/DeletePost", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // DiscoveryServiceServer is the server API for DiscoveryService service.
 // All implementations should embed UnimplementedDiscoveryServiceServer
 // for forward compatibility
 type DiscoveryServiceServer interface {
 	AddPost(context.Context, *AddPostRequest) (*AddPostResponse, error)
 	GetPosts(context.Context, *GetPostsRequest) (*GetPostsResponse, error)
+	DeletePost(context.Context, *DeletePostRequest) (*DeletePostResponse, error)
 }
 
 // UnimplementedDiscoveryServiceServer should be embedded to have forward compatible implementations.
@@ -69,6 +80,9 @@ func (UnimplementedDiscoveryServiceServer) AddPost(context.Context, *AddPostRequ
 }
 func (UnimplementedDiscoveryServiceServer) GetPosts(context.Context, *GetPostsRequest) (*GetPostsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetPosts not implemented")
+}
+func (UnimplementedDiscoveryServiceServer) DeletePost(context.Context, *DeletePostRequest) (*DeletePostResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DeletePost not implemented")
 }
 
 // UnsafeDiscoveryServiceServer may be embedded to opt out of forward compatibility for this service.
@@ -118,6 +132,24 @@ func _DiscoveryService_GetPosts_Handler(srv interface{}, ctx context.Context, de
 	return interceptor(ctx, in, info, handler)
 }
 
+func _DiscoveryService_DeletePost_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(DeletePostRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DiscoveryServiceServer).DeletePost(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/discovery.v1.DiscoveryService/DeletePost",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DiscoveryServiceServer).DeletePost(ctx, req.(*DeletePostRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // DiscoveryService_ServiceDesc is the grpc.ServiceDesc for DiscoveryService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -132,6 +164,10 @@ var DiscoveryService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetPosts",
 			Handler:    _DiscoveryService_GetPosts_Handler,
+		},
+		{
+			MethodName: "DeletePost",
+			Handler:    _DiscoveryService_DeletePost_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
