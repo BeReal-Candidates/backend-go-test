@@ -64,4 +64,17 @@ func (s *Server) GetPosts(ctx context.Context, req *pbdiscovery.GetPostsRequest)
 	}, nil
 }
 
+func (s *Server) DeletePost(ctx context.Context, req *pbdiscovery.DeletePostRequest) (*pbdiscovery.DeletePostResponse, error) {
+	success, err := s.service.DeletePost(ctx, req.PostId)
+	if err != nil {
+		return &pbdiscovery.DeletePostResponse{
+			Success: false,
+		}, err
+	}
+
+	return &pbdiscovery.DeletePostResponse{
+		Success: success,
+	}, nil
+}
+
 func (*Server) Close() {}

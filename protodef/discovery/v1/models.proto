@@ -26,6 +26,14 @@ message GetPostsResponse {
   repeated Post data = 3;
 }
 
+message DeletePostRequest {
+  string postId = 1;
+}
+
+message DeletePostResponse {
+  bool success = 1;
+}
+
 message Post {
   string id = 1;
   string owner = 2;

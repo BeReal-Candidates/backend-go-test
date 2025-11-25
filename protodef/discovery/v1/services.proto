@@ -9,4 +9,5 @@ option go_package = "github.com/BeReal-Candidates/backend-go-test/protob/discove
 service DiscoveryService {
   rpc AddPost(AddPostRequest) returns (AddPostResponse) {}
   rpc GetPosts(GetPostsRequest) returns (GetPostsResponse) {}
+  rpc DeletePost(DeletePostRequest) returns (DeletePostResponse) {}
 }
