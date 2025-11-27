@@ -1,9 +1,9 @@
 # test-backend
 ## BeReal technical test for backend interview
 
-This test is based off a real feature in our backend
-
-It should not take you more than 2 hours
+This test is based on a real feature in our backend. It should not take you more than 2 hours to complete.
+But note that this is not a fixed time constraint. You can spend more time if needed to polish your solution.
+We want to see high quality work, even if it takes 5 hours, rather than a low quality one made in 2 hours.
 
 Please do **not** fork your solution to a public repository and follow this guide to share your code, you have to do it **BEFORE** you code: [HOW_TO_SHARE_MY_CODE.md](./doc/HOW_TO_SHARE_MY_CODE.md)
 
@@ -48,5 +48,5 @@ The feature is deliberately unfinished and it contains bugs. Your goal is to:
 
 - Clients can have started scrolling from any post (they don't always ask for the last `PAGE_SIZE` posts)
 - We don't want you to add a database engine or any go library, you can only use what Golang and this current repository provide.
-- Keep the complexity low for all 3 operations (Add/Get/Delete): over a million of posts are discoverable.
-- Your code should be production-ready.
+- Keep the time complexity low for all 3 operations (Add/Get/Delete): over a million of posts are discoverable.
+- Your code should be production-ready, meaning well-organized, well-tested, and high performance.
