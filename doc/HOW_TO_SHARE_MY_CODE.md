@@ -43,6 +43,7 @@ You have to add these reviewers as collaborators to your repository:
 
 - quangvoodoo
 - Dmouri
+- myriamsqualli
 
 <p align="center">
 <img src="./2.add_collaborators.png" width=600 />
