@@ -27,7 +27,7 @@ message GetPostsResponse {
 }
 
 message DeletePostRequest {
-  string postId = 1;
+  string post_id = 1;
 }
 
 message DeletePostResponse {
