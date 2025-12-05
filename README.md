@@ -1,10 +1,11 @@
 # test-backend
 ## BeReal technical test for backend interview
 
-This test should not take you more than 2 hours to complete. But note that this is not a fixed time constraint. You can spend more time if needed to polish your solution. We want to see high quality work, even if it takes 5 hours, rather than a low quality one made in 2 hours.
+This test should not take you more than 2 hours to complete. But note that this is not a fixed time constraint. You can spend more time if needed to polish your solution. We expect to see very high quality work, even if it takes 5 hours, rather than a low quality one made in 2 hours.
 
-Please do **not** fork your solution to a public repository and follow this guide to share your code, you have to do it **BEFORE** you code: [HOW_TO_SHARE_MY_CODE.md](./doc/HOW_TO_SHARE_MY_CODE.md)
+Please *DO NOT** fork your solution to a public repository and follow this guide to share your code, you have to do it **BEFORE** you code: [HOW_TO_SHARE_MY_CODE.md](./doc/HOW_TO_SHARE_MY_CODE.md)
 
+Describe in the [MY_SOLUTION.md](./doc/MY_SOLUTION.md) file what you want us to know about your work.
 
 ### The discovery feature
 

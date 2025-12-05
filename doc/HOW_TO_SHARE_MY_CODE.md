@@ -49,9 +49,9 @@ You have to add these reviewers as collaborators to your repository:
 <img src="./2.add_collaborators.png" width=600 />
 </p>
 
-Please create a pull request for the changes that you made. Make sure to write in the description of the PR what you want us to know about your chosen approach, any bugs you have found and fixed, analyze the time complexity of your solution, etc.
+Please create a pull request for the changes that you made.
 
-Finally, don’t forget to submit your **GitHub PR URL** and **a zip file** containing your final solution, using the second link included in the email you received about the case study.
+Finally, don’t forget to submit your **GitHub PR URL** AND **a zip file** containing your final solution, using the second link included in the email you received about the case study.
 
 From this stage, we considerer you have finished the task!
 
