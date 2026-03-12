@@ -1,5 +1,8 @@
 # test-backend
+
 ## BeReal technical test for backend interview
+
+With this test, we want to assess your true potential. So, we expect you to work on it on your own, especially the coding part. You could use an AI solely for the knowledge & exploration, but you should not ask it to do the coding for you. All the code & documentation must be written entirely by you yourself.
 
 This test should not take you more than 2 hours to complete. But note that this is not a fixed time constraint. You can spend more time if needed to polish your solution. We expect to see very high quality work, even if it takes 5 hours, rather than a low quality one made in 2 hours.
 
